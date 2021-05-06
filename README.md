@@ -60,8 +60,8 @@ replace=`lshw`
 
 # Escape it for use as a Sed replacement string.
 
-IFS= read -d '' -r < <(sed -e ':a' -e '$!\{N;ba' -e '\}' -e 's/[&/]/\\&/g; s/\\n/\\&/g' <<<"$replace")
-replaceEscaped=$\{REPLY%$'\\n'\}
+IFS= read -d '' -r < <(sed -e ':a' -e '$!{N;ba' -e '}' -e 's/[&/\]/\\&/g; s/\n/\\&/g' <<<"$replace")
+replaceEscaped=${REPLY%$'\n'}
 
 sed -i -e "s/#defineLshw/$replaceEscaped/" /home/lekha/lekhachem.github.io/hardinfo.html
 
