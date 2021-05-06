@@ -5,7 +5,7 @@
 # Bash script examples
 
 ```
-# To start the Glances webserver.
+# Start the Glances webserver.
 
 glances -w
 ```
