@@ -27,7 +27,7 @@ sed -i -e 's/link rel="icon"/link rel="shortcut icon"/' index.html
 sed -i '/refresh/d' index.html
 sed -i -e 's/Uptime:/Update: #defineDate <br />  Uptime:/' index.html
 
-DEFINEDATE=\`date \+"%Y-%m-%d %H:%M:%S %Z"\`
+DEFINEDATE=`date \+"%Y-%m-%d %H:%M:%S %Z"`
 sed -i -e "s/#defineDate/$DEFINEDATE</a>/" index.html
 
 git add -A && git commit -m "bot: auto update"
