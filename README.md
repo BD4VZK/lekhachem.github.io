@@ -20,7 +20,7 @@ while :
 do
 
 cd /home/lekha/lekhachem.github.io
-rm index.html\* && wget localhost:61208
+rm index.html* && wget localhost:61208
 
 sed -i -e 's/ <title> Glances/ <title> LekhaChem’s System Status/' index.html
 sed -i -e 's/link rel="icon"/link rel="shortcut icon"/' index.html
