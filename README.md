@@ -54,8 +54,6 @@ do
 rm /home/lekha/lekhachem.github.io/hardinfo.html
 cp /root/hardinfo.html /home/lekha/lekhachem.github.io
 
-# Define sample multi-line literal.
-
 replace=`lshw`
 
 # Escape it for use as a Sed replacement string.
