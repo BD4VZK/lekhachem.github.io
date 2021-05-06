@@ -1,3 +1,5 @@
+_This may be useful, if you need to monitor your Linux server without a public IP address._
+
 # Environment
 - Glances v2.3 with psutil v3.4.2
 - Hardware Lister (lshw) - B.02.17
