@@ -54,6 +54,8 @@ while :
 do
 
 rm /home/lekha/lekhachem.github.io/hardinfo.html
+
+# i.e. `hardinfo-example.html`
 cp /root/hardinfo.html /home/lekha/lekhachem.github.io
 
 replace=`lshw`
